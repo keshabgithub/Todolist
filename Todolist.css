@@ -1,0 +1,181 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #83d1ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  background-color: #c1efc9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease; /* smooth zoom transition */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  width: calc(100% - 110px);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #319d5b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #9ce7b9;
+  margin-bottom: 10px; /* Increased margin for better separation */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+li span {
+  flex: 1;
+  margin-left: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+
+.date-picker {
+  margin: 20px 0;
+}
+
+.zoom-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.zoom-buttons button {
+  background-color: #319d5b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.zoom-buttons button + button {
+  margin-left: 10px;
+}
+
+.zoom-buttons button:hover {
+  background-color: #319d5b;
+}
+
+.calendar-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+
+@media screen and (max-width: 320px) {
+
+  .App {
+    max-width: 250px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+ 
+  .App {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .App {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .App {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .App {
+    max-width: 800px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .App {
+    max-width: 1000px;
+  }
+}
+
+
