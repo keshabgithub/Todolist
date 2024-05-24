@@ -15,9 +15,9 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 1000px; /* Set the maximum width for all screen sizes */
   text-align: center;
-  transition: transform 0.3s ease; /* smooth zoom transition */
+  transition: transform 0.3s ease; 
 }
 
 h1 {
@@ -34,7 +34,7 @@ form {
 input[type="text"] {
   padding: 10px;
   margin-right: 10px;
-  width: calc(100% - 110px);
+  width: calc(90% - 0px);
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 14px;
@@ -71,9 +71,9 @@ li {
   align-items: center;
   padding: 10px;
   background: #9ce7b9;
-  margin-bottom: 10px; /* Increased margin for better separation */
+  margin-bottom: 10px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 li span {
@@ -137,45 +137,15 @@ li button:hover {
   left: 20px;
 }
 
-
-@media screen and (max-width: 320px) {
-
+/* Media Queries */
+@media screen and (max-width: 768px) {
   .App {
-    max-width: 250px;
+    max-width: 90%;
   }
 }
 
-@media screen and (min-width: 321px) and (max-width: 480px) {
- 
-  .App {
-    max-width: 300px;
+@media screen and (max-width: 480px) {
+  input[type="text"] {
+    width: calc(100% - 20px);
   }
 }
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
-  .App {
-    max-width: 400px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-
-  .App {
-    max-width: 600px;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-  .App {
-    max-width: 800px;
-  }
-}
-
-@media screen and (min-width: 1441px) {
-  .App {
-    max-width: 1000px;
-  }
-}
-
-
